@@ -208,8 +208,6 @@ webpackJsonp([0],[
 	'use strict';
 
 	module.exports = {
-	  // host: 'http://localhost:4741',
-
 	  host: 'https://radiant-retreat-75178.herokuapp.com'
 	};
 
@@ -435,42 +433,40 @@ webpackJsonp([0],[
 	    + "</small></h1>\n    <div>\n"
 	    + ((stack1 = helpers["if"].call(alias3,((stack1 = blockParams[0][0]) != null ? stack1.user : stack1),{"name":"if","hash":{},"fn":container.program(2, data, 0, blockParams),"inverse":container.program(4, data, 0, blockParams),"data":data,"blockParams":blockParams})) != null ? stack1 : "")
 	    + "    </div>\n    <div>\n"
-	    + ((stack1 = helpers["if"].call(alias3,((stack1 = blockParams[0][0]) != null ? stack1.author : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0, blockParams),"inverse":container.program(8, data, 0, blockParams),"data":data,"blockParams":blockParams})) != null ? stack1 : "")
+	    + ((stack1 = helpers["if"].call(alias3,((stack1 = blockParams[0][0]) != null ? stack1.author : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0, blockParams),"inverse":container.program(4, data, 0, blockParams),"data":data,"blockParams":blockParams})) != null ? stack1 : "")
 	    + "    </div>\n\n\n    <div>\n"
-	    + ((stack1 = helpers["if"].call(alias3,((stack1 = blockParams[0][0]) != null ? stack1.editable : stack1),{"name":"if","hash":{},"fn":container.program(10, data, 0, blockParams),"inverse":container.program(12, data, 0, blockParams),"data":data,"blockParams":blockParams})) != null ? stack1 : "")
+	    + ((stack1 = helpers["if"].call(alias3,((stack1 = blockParams[0][0]) != null ? stack1.editable : stack1),{"name":"if","hash":{},"fn":container.program(8, data, 0, blockParams),"inverse":container.program(10, data, 0, blockParams),"data":data,"blockParams":blockParams})) != null ? stack1 : "")
 	    + "    </div>\n\n    <div>\n"
-	    + ((stack1 = helpers["if"].call(alias3,((stack1 = blockParams[0][0]) != null ? stack1.editable : stack1),{"name":"if","hash":{},"fn":container.program(14, data, 0, blockParams),"inverse":container.program(12, data, 0, blockParams),"data":data,"blockParams":blockParams})) != null ? stack1 : "")
+	    + ((stack1 = helpers["if"].call(alias3,((stack1 = blockParams[0][0]) != null ? stack1.editable : stack1),{"name":"if","hash":{},"fn":container.program(12, data, 0, blockParams),"inverse":container.program(10, data, 0, blockParams),"data":data,"blockParams":blockParams})) != null ? stack1 : "")
 	    + "  </div>\n\n  </div>\n\n";
 	},"2":function(container,depth0,helpers,partials,data,blockParams) {
 	    var stack1;
 
-	  return "        "
+	  return "        User: "
 	    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = blockParams[1][0]) != null ? stack1.user : stack1)) != null ? stack1.email : stack1), depth0))
 	    + "\n";
 	},"4":function(container,depth0,helpers,partials,data) {
-	    return "        Unknown user.\n";
+	    return "        Unknown.\n";
 	},"6":function(container,depth0,helpers,partials,data,blockParams) {
 	    var stack1;
 
-	  return "        "
+	  return "        Author: "
 	    + container.escapeExpression(container.lambda(((stack1 = blockParams[1][0]) != null ? stack1.author : stack1), depth0))
 	    + "\n";
-	},"8":function(container,depth0,helpers,partials,data) {
-	    return "        Unknown Author.\n";
-	},"10":function(container,depth0,helpers,partials,data,blockParams) {
+	},"8":function(container,depth0,helpers,partials,data,blockParams) {
 	    var stack1;
 
 	  return "        <button data-id=\""
 	    + container.escapeExpression(container.lambda(((stack1 = blockParams[1][0]) != null ? stack1.id : stack1), depth0))
 	    + "\" class=\"delete-button btn-danger btn large material-icons\">Remove\n          <span class=\"glyphicon glyphicon-trash\"></span>\n        </button>\n";
-	},"12":function(container,depth0,helpers,partials,data) {
+	},"10":function(container,depth0,helpers,partials,data) {
 	    return "\n";
-	},"14":function(container,depth0,helpers,partials,data,blockParams) {
+	},"12":function(container,depth0,helpers,partials,data,blockParams) {
 	    var stack1;
 
 	  return "        <!-- Button trigger modal -->\n        <button type=\"button\" class=\"btn btn-primary btn-lg\" data-toggle=\"modal\" data-target=\"#updateModal\">\nEdit Your Quote?\n<span class=\"glyphicon glyphicon-pencil\"></span>\n</button>\n\n        <!-- Modal -->\n        <div class=\"modal fade\" id=\"updateModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">\n          <div class=\"modal-dialog\" role=\"document\">\n            <div class=\"modal-content\">\n              <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n                <h4 class=\"modal-title\" id=\"myModalLabel\">Edit Your Quote</h4>\n              </div>\n              <div class=\"modal-body\">\n\n                <form data-id=\""
 	    + container.escapeExpression(container.lambda(((stack1 = blockParams[1][0]) != null ? stack1.id : stack1), depth0))
-	    + "\" class=\"update-quote-form\" >\n                  <h2>Update Quote</h2>\n                  <input name=\"quote[quoteText]\" type=\"text\" value=\"\" placeholder=\"quote\">\n                  <input name=\"quote[author]\" type=\"text\" value=\"\" placeholder=\"Original author/unknown\">\n                  <input name=\"quote[user]\" type=\"text\" value=\"\" placeholder=\"your email\">\n                  <input type=\"submit\" data-toggle='modal-close' name=\"submit\" value=\"Update Quote\">\n                </form>\n\n\n              </div>\n            </div>\n          </div>\n        </div>\n    </div>\n\n";
+	    + "\" class=\"update-quote-form\" >\n                  <h2>Update Quote</h2>\n                  <input name=\"quote[quoteText]\" type=\"text\" value=\"\" placeholder=\"quote\">\n                  <input name=\"quote[author]\" type=\"text\" value=\"\" placeholder=\"Original author/unknown\">\n\n                  <input type=\"submit\" data-toggle='modal-close' name=\"submit\" value=\"Update Quote\">\n                </form>\n\n\n              </div>\n            </div>\n          </div>\n        </div>\n    </div>\n\n";
 	},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data,blockParams) {
 	    var stack1;
 
