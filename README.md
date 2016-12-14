@@ -13,6 +13,11 @@ they seem to summarize what you believe in.
 You have to be logged in to view the quotes. You can't edit or delete other people's quotes, but if you don't like
 yours, then you can choose to delete or edit them!
 
+##### For future Improvements
+I would include a _like_ aspect to the application. Meaning a user would be able to like other people's votes if they found them meaningful to what they believe in.
+One way to implement this would be to have a third table meeting between users and quotes, called likes. Likes would be associated between users and quotes. Where users have many likes, and quotes have many likes. One could use [acts as votable]( https://github.com/ryanto/acts_as_votable) as a quicker way to implement this.
+
+
 ## User Stories
 
 As a user, I can sign up and log in securely.
@@ -42,11 +47,11 @@ and
 http://imgur.com/xDn7fZR
 
 
-## Development time
+## Development timeline and approach
 
 I was given a week to develop this project, and two weeks before that I knew nothing about back-end, so I am very proud of how far I got given the slim time frame, getting create, read, edit, and destroy working, both on the front-end and the back-end!
 
-This full-stack project I planned much better, and enjoyed working alongside other developers, to help guide me along when I would get stuck on something. My process for getting stuck included, googling, searching stack overflow, searching for other issues on GitHub within the project prompt's repo. If I was still stuck I would talk through my problem with other developers, and then if I still needed more guidance I would open an issue on the project repository to have an instructor of General Assembly guide me on the issue, to finally a one-on-one with an instructor. The process would be very similar, *if not* identicle to a real world development environment as a Web Application Developer.
+This full-stack project I planned much better, and enjoyed working alongside other developers, to help guide me along when I would get stuck on something. My process for getting stuck included, googling, watching tutorials, searching stack overflow, searching for other issues on GitHub within the project prompt's repo. If I was still stuck I would talk through my problem with other developers, and then if I still needed more guidance I would open an issue on the project repository to have an instructor of General Assembly guide me on the issue, to finally a one-on-one with an instructor. The process would be very similar, *if not* identicle to a real world development environment as a Web Application Developer.
 
 ##### Diverse technologies used, including:
 - HTML
